@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMU Care Foundation</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/home.css"> <!-- Additional CSS for home page -->
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="static/images/logo.png" alt="AMU Care Foundation Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{%url 'register_webuser' %}">Sign Up</a></li>
+                <li><a href="{%url 'login'%}">Login</a></li>
+                <li><a href="#">Volunteer Opportunities</a></li>
+                <li><a href="#">Donate</a></li>
+                <li><a href="#" class="cta-button">Go to Dashboard</a></li>
+                <li><a href="#">Request Aid</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Manage Aid</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Donation History</a></li>
+                <li><a href="#">Volunteer Tasks</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="admin.html"> sig up as Admin</a></li>
+                <!-- <li><a href="support.html">Help & Support</a></li> -->
+                <!-- <li><a href="logout.html">Logout</a></li> -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section with Carousel -->
+        <section class="hero">
+            <div class="carousel">
+                <img src="static/images/hero1.png" alt="Helping Hands" class="active">
+                <img src="static/images/hero2.png" alt="Community Support">
+                <img src="static/images/hero3.png" alt="Making a Difference">
+            </div>
+
+            <!-- Added two buttons for previous and next -->
+            <button id="prev" class="carousel-control prev">&lt;</button>
+            <button id="next" class="carousel-control next">&gt;</button>
+            
+            <h1>Welcome to AMU Care Foundation</h1>
+            <p>Your support makes a difference. Join us in making the world a better place.</p>
+            <a href="register.html" class="cta-button">Get Involved</a>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="statistics">
+            <h2>Statistics</h2>
+            <div class="stat">
+                <h3>Volunteers</h3>
+                <p id="volunteersCount">1,0002345+</p>
+            </div>
+            <div class="stat">
+                <h3>Total Donations</h3>
+                <p id="donationsCount">$10,222,250,000+</p>
+            </div>
+            <div class="stat">
+                <h3>People Helped</h3>
+                <p id="peopleHelpedCount">5,000,234,222,111+</p>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <h2>Success Stories</h2>
+
+            <blockquote>
+                <h3>Success Story 1: A New Beginning for Amina</h3>
+                <p>Amina, a 34-year-old single mother of two, found herself in dire straits after losing her job due to the pandemic. Struggling to make ends meet, she reached out to AMU Care Foundation for assistance. Through our support, Amina received food supplies, financial aid, and counseling services.
+                "I felt lost and hopeless," Amina recalls. "AMU Care Foundation not only provided me with food but also helped me get back on my feet. I have now started my own small business, selling handmade crafts online. I am so grateful for the support that has changed my life."</p>
+                <footer>-Amina, a single mother</footer>
+            </blockquote>
+
+            <blockquote>
+                <h3>Success Story 2: Transforming Lives Through Education</h3>
+                <p>
+                    Rahul, a 16-year-old boy from a low-income family, dreamed of becoming an engineer. However, financial constraints made it nearly impossible for him to continue his education. With the help of AMU Care Foundation's scholarship program, Rahul was able to enroll in a local school that provided quality education.
+                    
+                    "Education is my only way out of poverty," Rahul shares. "Thanks to AMU Care Foundation, I have access to books, school supplies, and even tutoring. I am now one step closer to achieving my dream!"</p>
+                <footer>-Rahul, from a low-family income</footer>
+            </blockquote>
+
+
+
+            <blockquote>
+                <h3>Success Story 3: Food for the Hungry</h3>
+                <p>
+                    During a particularly harsh winter, the AMU Care Foundation organized a food drive that provided meals to over 1,000 families in need. One such family was the Kumar family, who had been struggling to feed their children due to loss of income.
+                    
+                    "When we received the food packages from AMU Care Foundation, it was a miracle," says Priya, the mother of three. "We didn't have enough money for groceries, and I was worried about my children's health. The foundation's help not only fed my family but also brought us hope during difficult times."</p>
+                <footer>-Kumar family, struggling to feed their children</footer>
+            </blockquote>
+
+
+
+            <blockquote>
+                <h3>Success Story 4: Empowering Local Farmers</h3>
+                <p>
+                    The AMU Care Foundation initiated a program to support local farmers by providing them with seeds, training, and resources to enhance their agricultural practices. One beneficiary, Mr. Khan, was able to increase his crop yield significantly with this support.
+                    
+                    "Before joining the program, I struggled to grow enough food for my family," Mr. Khan explains. "With the guidance and resources from AMU Care Foundation, I can now produce more crops than ever. I not only feed my family but also sell the surplus in the market, which has improved our financial situation."</p>
+                <footer>-Mr. Khan, struggling to grow enough food for his family</footer>
+            </blockquote>
+
+
+
+
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery">
+            <h2>Our Work</h2>
+            <div class="gallery-grid">
+                <img src="static/images/gallery1.png" alt="Event 1">
+                <img src="static/images/gallery2.png" alt="Event 2">
+                <img src="static/images/gallery3.png" alt="Event 3">
+                <img src="static/images/gallery4.png" alt="Event 4">
+                <img src="static/images/gallery5.png" alt="Event 5">
+                <img src="static/images/gallery6.png" alt="Event 6">
+                <img src="static/images/gallery7.png" alt="Event 7">
+                <img src="static/images/gallery8.png" alt="Event 8">
+                <img src="static/images/gallery9.png" alt="Event 9">
+                <img src="static/images/gallery10.png" alt="Event 10">
+                <img src="static/images/gallery11.png" alt="Event 11">
+                <img src="static/images/gallery12.png" alt="Event 12">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+
+        
+        <p>&copy; 2024 AMU Care Foundation. All rights reserved.</p>
+    </footer>
+
+    <script src="static/js/script.js"></script>
+    <script src="static/js/home.js"></script> <!-- Additional JS for home page -->
+</body>
+</html>
+
+

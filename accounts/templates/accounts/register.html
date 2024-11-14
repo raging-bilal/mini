@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration - AMU Care Foundation</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+ 
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="{%static 'images/logo.png' %}" alt="AMU Care Foundation Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#register">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="register-form">
+            <h1>Register for AMU Care Foundation</h1>
+            <form id="registrationForm" method ="POST">
+
+                {% csrf_token %}
+                {{ form.as_p }}
+
+
+<a href="{% url 'login' %}">Already have an account? Login</a>
+
+                <button type="submit" class="cta-button">Register</button>
+            </form>
+
+            <div id="formMessage"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AMU Care Foundation. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
